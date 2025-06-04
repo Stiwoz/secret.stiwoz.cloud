@@ -1,3 +1,3 @@
-# utils.stiwoz.cloud
+# secret.stiwoz.cloud
 
-Random collection of utilities and scripts I use during a normal workday
+Empty webpage, serving content from "nothing"
