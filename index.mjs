@@ -5,8 +5,6 @@ import morgan from 'morgan';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 
-import contentSecurityPolicyHeader from './middlewares/content-security-policy.middleware.mjs';
-
 import home from './routes/home.get.mjs';
 
 // Read .env
@@ -31,11 +29,6 @@ app.use([
   }),
   // Parse and send JSON params/responses
   express.json(),
-]);
-
-// Custom middlewares
-app.use([
-  contentSecurityPolicyHeader,
 ]);
 
 // Declare routes
